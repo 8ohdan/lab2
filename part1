@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+#include <unistd.h>
+int main() {
+	double x, y;
+		printf("Kravchenko Bohdan\n\nRi-p31\n\nLab2\n\n");
+			sleep(3);
+			system("cls");
+		printf("Enter x:\n");
+			scanf("%lf", &x);
+		if (x < 0 && x >= -3) {
+			y = fabs(x + 4) - fabs(pow(x, 3) - 4);
+			printf("%f", y);
+		}
+		else if (x < 15 && x >= -9) {
+			y = 2*x;
+			printf("%f", y);
+		}
+		else if (x < 50 && x >= 27) {
+			y = x/pow(cos(x), 2) + 1;
+			printf("%f", y);
+		}
+		else 
+			{
+			y = x/4 + sin(x)/3;
+			printf("%f", y);
+		}
+	return 0;
+}
